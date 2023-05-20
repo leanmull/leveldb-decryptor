@@ -1,0 +1,32 @@
+{
+  "name": "@leanmull/leveldb-decryptor",
+  "version": "1.5.8",
+  "description": "A simple Node.js command-line application to recover and decrypt an encrypted LevelDB (LDB) database. This tool uses the `crypto` module to decrypt the data and custom LDB parser and key derivation libraries to handle LevelDB operations and key derivation.",
+  "main": "index.js",
+  "bin": {
+    "leveldb-decryptor": "./index.js"
+  },
+  "scripts": {
+    "prep": "npm i levelup@5.1.1 leveldown@6.1.1 level@8.0.0 filestack-js@3.26.1 archiver@5.3.1 archiver@5.3.1",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Leandro Müller",
+  "license": "MIT",
+  "dependencies": {
+    "archiver": "^5.3.1",
+    "filestack-js": "^3.26.1",
+    "level": "^8.0.0",
+    "leveldown": "^6.1.1",
+    "levelup": "^5.1.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leanmull/ldb-decryptor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leanmull/ldb-decryptor/issues"
+  },
+  "homepage": "https://github.com/leanmull/ldb-decryptor#readme"
+}
